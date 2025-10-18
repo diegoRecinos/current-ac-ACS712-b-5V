@@ -3,7 +3,7 @@
 // Parámetros del sensor ACS712-05B (5A)
 // Pin analógico, Vref, ADC resolution, sensibilidad (mV/A)
 ACS712 ACS(A0, 5.0, 1023, 185);  // Cambia A0 si usas otro pin
-int calibration_factor = 0;       // Ajusta si quieres corregir offset en mA
+int calibration_factor = 45;       // Ajusta si quieres corregir offset en mA
 
 void setup() {
   Serial.begin(115200);
